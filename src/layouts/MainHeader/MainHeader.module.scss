@@ -1,0 +1,69 @@
+@import '~/styles/mixins';
+
+.container {
+    @include flex(space-between);
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+.logo-link {
+    @include flex;
+}
+
+.navigation {
+    @include flex($gap: 190px);
+}
+
+.list-item {
+    list-style: none;
+    padding-left: 0;
+    @include flex($gap: 48px);
+}
+
+.item-link.active {
+    border-bottom: 1px solid var(--black);
+}
+
+.group {
+    @include flex($gap: 24px);
+}
+
+.search {
+    position: relative;
+
+    .search-input {
+        padding: 10px 12px 10px 20px;
+        width: 230px;
+    }
+
+    .button {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.action {
+    @include flex($gap: 16px);
+
+    .wrapper {
+        position: relative;
+    }
+
+    .notification {
+        position: absolute;
+        top: -3px;
+        right: 0;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: var(--primary);
+        background-color: var(--secondary-2);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        text-align: center;
+    }
+}

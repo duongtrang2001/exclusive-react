@@ -1,0 +1,28 @@
+@import '~/styles/mixins';
+
+.top-header {
+    color: var(--text-color);
+    background-color: var(--black);
+    font-size: 1.4rem;
+
+    .wrapper {
+        @include flex(center);
+        position: relative;
+
+        line-height: 2.1rem;
+        height: 48px;
+    }
+    .text-link {
+        text-decoration: underline;
+        margin-left: 8px;
+        font-weight: 600;
+    }
+    .language {
+        position: absolute;
+        right: 0;
+    }
+
+    .icon {
+        margin-left: 5px;
+    }
+}
