@@ -1,0 +1,11 @@
+.wrapper {
+    background-color: rgba($color: #ffffff, $alpha: 0.09);
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: var(--black);
+    backdrop-filter: blur(6px);
+    padding: 18px 12px 10px 20px;
+    box-shadow: 1px 1px 10px #ccc;
+}

@@ -20,9 +20,25 @@
     .language {
         position: absolute;
         right: 0;
+        cursor: default;
     }
 
     .icon {
         margin-left: 5px;
     }
+}
+.box-languages {
+    list-style: none;
+    padding-left: 0;
+    width: 150px;
+}
+
+.language-item {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: default;
+}
+
+.language-item.active {
+    color: var(--secondary-2);
 }
