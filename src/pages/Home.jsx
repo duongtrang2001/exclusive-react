@@ -1,8 +1,12 @@
+import HomeHeroSection from '~/layouts/HomeHeroSection/HomeHeroSection';
+
 function Home() {
     return (
-        <>
-            <h1>Home</h1>
-        </>
+        <main>
+            <div className="container-width">
+                <HomeHeroSection />
+            </div>
+        </main>
     );
 }
 
