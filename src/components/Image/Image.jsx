@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 import CreateCx from '~/utils/cxHelper';
-import styles from './Images.module.scss';
+import styles from './Image.module.scss';
 import Images from '~/assets/images/Images.jsx';
 
 const cx = CreateCx(styles);
@@ -12,7 +12,7 @@ function Image({ src, alt, fallbackSrc = Images.noImage, className, ...props }) 
     };
 
     return (
-        <img className={cx('image', className)} src={src || fallbackSrc} alt={alt} onerror={handleError} {...props} />
+        <img className={cx('image', className)} src={src || fallbackSrc} alt={alt} onError={handleError} {...props} />
     );
 }
 

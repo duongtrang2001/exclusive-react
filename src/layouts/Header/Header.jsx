@@ -7,7 +7,7 @@ function Header() {
         <header>
             <TopHeader />
             <MainHeader />
-            <Line />
+            <Line black />
         </header>
     );
 }
