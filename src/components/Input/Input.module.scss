@@ -3,6 +3,7 @@
     border: none;
     outline: none;
     border-radius: 4px;
+    width: 100%;
 }
 
 .input::placeholder {
@@ -23,4 +24,10 @@
     border: 2px solid var(--text-color);
     color: var(--text-color);
     background-color: transparent;
+}
+
+.borderBtm {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+    padding-bottom: 8px;
 }

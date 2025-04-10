@@ -1,0 +1,43 @@
+@import '~/styles/mixins';
+
+.wrapper {
+    @include flex(center, $gap: 16px);
+    border-radius: 4px;
+    height: 56px;
+    padding: 0 20px;
+    color: var(--text-color);
+    background-color: var(--button-color-2);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--button-hover);
+    }
+
+    &:hover .icon {
+        opacity: 0.8;
+    }
+
+    .icon {
+        display: block;
+    }
+}
+
+.outline {
+    color: var(--black);
+    border: 1px solid var(--black);
+    background-color: transparent;
+
+    &:hover {
+        color: var(--text-color-1);
+        background-color: transparent;
+    }
+}
+
+.small {
+    padding: 10px 48px;
+}
+
+.disable {
+    cursor: default;
+    background-color: var(--text-color-1);
+}
